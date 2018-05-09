@@ -18,7 +18,7 @@ DODC (Dynamic Outlier Detector Combination) is proposed, demonstrated and assess
 
 DODC has two key stages as well. In Generation stage, the chosen base detector method, e.g., LOF, is initialized with distinct parameters to build a pool of diversified detectors, and all are then fitted on the entire training data. In Selection stage, DODC picks the most competent base detector in the local region defined by the test instance. Finally, the selected detector is used to predict the outlier score for the test instance.
 
-![ Flowchart](https://github.com/yzhao062/DODC/blob/master/md_figs/flowchart3.png)
+![ Flowchart](https://github.com/yzhao062/DODC/blob/master/md_figs/flowchart.png)
 
 ## Dependency
 The experiement codes are writted in Python 3 and built on a number of Python packages:

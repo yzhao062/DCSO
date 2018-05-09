@@ -22,9 +22,11 @@ DODC has two key stages as well. In Generation stage, the chosen base detector m
 
 ## Dependency
 The experiement codes are writted in Python 3 and built on a number of Python packages:
-**TBF**
+- numpy==1.13.1
+- scipy==0.19.1
+- scikit_learn==0.19.1
 
-Batch installation is possible using the supplied "requirements.txt"
+Batch installation is possible using the supplied "requirements.txt" in conda or pypi.
 
 ------------
 

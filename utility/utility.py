@@ -11,6 +11,13 @@ from models.lof import Lof
 from models.knn import Knn
 
 
+def get_label_n(y, y_pred):
+    out_perc = np.count_nonzero(y) / len(y)
+    threshold = scoreatpercentile(y_pred, 100 * (1 - out_perc))
+    y_pred = (y_pred > threshold).astype('int')
+    return y_pred
+
+
 def standardizer(X_train, X_test):
     '''
     normalization function wrapper
@@ -83,6 +90,7 @@ def train_predict_lof(k_list, X_train_norm, X_test_norm, train_scores,
         test_scores[:, curr_ind] = test_score.ravel()
 
     return train_scores, test_scores
+
 
 def train_predict_knn(k_list, X_train_norm, X_test_norm, train_scores,
                       test_scores):

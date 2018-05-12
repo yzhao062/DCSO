@@ -21,10 +21,10 @@ DODC has two key stages as well. In Generation stage, the chosen base detector m
 ![ Flowchart](https://github.com/yzhao062/DODC/blob/master/md_figs/flowchart.png)
 
 ## Dependency
-The experiement codes are writted in Python 3 and built on a number of Python packages:
-- numpy==1.13.1
-- scipy==0.19.1
-- scikit_learn==0.19.1
+The experiement codes are writted in Python 3.6 and built on a number of Python packages:
+- numpy>=1.13
+- scipy>=0.19
+- scikit_learn>=0.19
 
 Batch installation is possible using the supplied "requirements.txt" in conda or pypi.
 
@@ -53,6 +53,18 @@ All datasets are accesible from http://odds.cs.stonybrook.edu/. Citation Suggest
 ------------
 
 ## Usage and Sample Output (Demo Version)
-Experiments could be reproduced by running **demo_lof.py** and **demo_knn.py** directly. You could simply download/clone the entire repository and execute the code by "python demo_lof.py".
+Experiments could be reproduced by running **demo_lof.py** and **demo_knn.py** directly. You could simply download/clone the entire repository and execute the code by 
+```bash
+python demo_lof.py
+```
 
-The difference between **demo_lof.py** and **demo_knn.py** is simply at the base detector choice. Apparently, the former uses LOF as the base detector, while the latter uses *k*NN instead,
+The difference between **demo_lof.py** and **demo_knn.py** is simply at the base detector choice. Apparently, the former uses LOF as the base detector, while the latter uses *k*NN instead. We introduce two evalution methods:
+1.  The area under receiver operating characteristic curve (**ROC**)
+2.  Precision at rank m (***P*@*m***) 
+
+The results of **demo_lof.py** and **demo_knn.py**  are presented below. Table 1 and 2 illustrate the results when **LOF** is used as the base detector, while Table 3 and 4 are based when ***k*NN** is used as the base detector. The highest score is highlighted in **bold**, while the lowest is marked with an **asterisk (*)**.
+
+![ LOF_ROC](https://github.com/yzhao062/DODC/blob/master/md_figs/lof_roc.png)
+![ LOF_PRC](https://github.com/yzhao062/DODC/blob/master/md_figs/lof_prc.png)
+![ KNN_ROC](https://github.com/yzhao062/DODC/blob/master/md_figs/knn_roc.png)
+![ KNN_PRC](https://github.com/yzhao062/DODC/blob/master/md_figs/knn_prc.png)

@@ -74,3 +74,5 @@ The results of **demo_lof.py** and **demo_knn.py**  are presented below. Table 1
 The figure below visually compares the performance of SG and DODC methods on **Cardio**, **Thyroid** and **Letter** using t-distributed stochastic neighbor embedding (t-SNE). Normal and outlying points are denoted as **orange dots** and **red squares**, respectively. The normal points that are only correctly detected by SG methods are named SG_N (** green triangle_down**), and only by DODC are named as DODC_N (**blue cross sign**). Similarly, outliers are denoted as SG_N (**green triangle_up**) and DODC_N (**blue plus sign**), given they can only be detected by SG or DODC methods, respectively.
 
 ![ tsne](https://github.com/yzhao062/DODC/blob/master/md_figs/tsne.png)
+
+Full visulization could be found at [t-SNE](https://github.com/yzhao062/DODC/tree/master/viz "t-SNE"). To replicate the  visualization, please use "**viz_tsne.py**". It is noted this script is not fully optimized and could be cubersome.

@@ -49,7 +49,8 @@ Five datasets are used (see dataset folder):
 All datasets are accesible from http://odds.cs.stonybrook.edu/. Citation Suggestion for the datasets please refer to: 
 > Shebuti Rayana (2016).  ODDS Library [http://odds.cs.stonybrook.edu]. Stony Brook, NY: Stony Brook University, Department of Computer Science.
 
-To replicate the demo, you should download the datasets and place them in ./datasets/.
+To replicate the demo, you should download the datasets from http://odds.cs.stonybrook.edu/ and place them in ./datasets/. We do not provide the data download.
+
 ------------
 
 ## Usage and Sample Output (Demo Version)

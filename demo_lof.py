@@ -203,8 +203,8 @@ if __name__ == '__main__':
         for m in range(len(m_list)):
             test_target_list.extend([pred_scores_best[:, m],
                                      pred_scores_ens[:, m]])
-            method_list.extend(['dodc_a_' + m_list[m],
-                                'dodc_moa_' + m_list[m]])
+            method_list.extend(['DCSO_a_' + m_list[m],
+                                'DCSO_moa_' + m_list[m]])
         ######################################################################
 
         # use max for pseudo ground truth generation
@@ -272,8 +272,8 @@ if __name__ == '__main__':
         for m in range(len(m_list)):
             test_target_list.extend([pred_scores_best[:, m],
                                      pred_scores_ens[:, m]])
-            method_list.extend(['dodc_m_' + m_list[m],
-                                'dodc_aom_' + m_list[m]])
+            method_list.extend(['DCSO_m_' + m_list[m],
+                                'DCSO_aom_' + m_list[m]])
 
         # store performance information and print result
         for i in range(n_baselines):

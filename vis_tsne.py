@@ -29,14 +29,14 @@ data_list = ["Annthyroid",
              "Vowels",
              "Cardio",
              "Mnist"]
-dodc_best_list = [186, 38, 71, 103, 233, 157, 128, 127, 97]
+DCSO_best_list = [186, 38, 71, 103, 233, 157, 128, 127, 97]
 
-for data, dodc_best in zip(data_list, dodc_best_list):
+for data, DCSO_best in zip(data_list, DCSO_best_list):
 
     print('processing', data)
     X_test_list = []
     X_test_name_list = []
-    dodc_best_list = []
+    DCSO_best_list = []
     test_target_list_list = []
     y_test_list = []
     trans_data_list = []
@@ -350,7 +350,7 @@ for data, dodc_best in zip(data_list, dodc_best_list):
         TSNE(n_components=2, init='pca').fit_transform(X_test))
     X_test_list.append(X_test)
     X_test_name_list.append(data)
-    dodc_best_list.append(dodc_best)
+    DCSO_best_list.append(DCSO_best)
     test_target_list_list.append(test_target_list)
     y_test_list.append(y_test)
     ##########################################################################
@@ -360,7 +360,7 @@ for data, dodc_best in zip(data_list, dodc_best_list):
 
         # find the comparision
         dcs_target = get_label_n(y_test_list[k],
-                                 test_target_list_list[k][dodc_best_list[k]])
+                                 test_target_list_list[k][DCSO_best_list[k]])
         mean_target = get_label_n(y_test_list[k], test_target_list_list[k][0])
         max_target = get_label_n(y_test_list[k], test_target_list_list[k][1])
 
@@ -453,10 +453,10 @@ for data, dodc_best in zip(data_list, dodc_best_list):
                     color='g', alpha=0.95, s=40, marker='^')
 
         plt.scatter(trans_data_list[k][dcs_norm_max, 0],
-                    trans_data_list[k][dcs_norm_max, 1], label='DODC_N',
+                    trans_data_list[k][dcs_norm_max, 1], label='DCSO_N',
                     color='b', alpha=0.95, s=54, marker='x')
         plt.scatter(trans_data_list[k][dcs_out_max, 0],
-                    trans_data_list[k][dcs_out_max, 1], label='DODC_O',
+                    trans_data_list[k][dcs_out_max, 1], label='DCSO_O',
                     color='b', alpha=0.95, s=65, marker='+')
 
 
@@ -464,7 +464,7 @@ for data, dodc_best in zip(data_list, dodc_best_list):
                    bbox_transform=plt.gcf().transFigure)
         plt.xticks([])
         plt.yticks([])
-        plt.title('SG_A vs. DODC (' + X_test_name_list[k] + ')', fontsize=12)
+        plt.title('SG_A vs. DCSO (' + X_test_name_list[k] + ')', fontsize=12)
 
         # plot max
         plt.subplot(122)
@@ -484,17 +484,17 @@ for data, dodc_best in zip(data_list, dodc_best_list):
                     color='g', alpha=0.95, s=40, marker='^')
 
         plt.scatter(trans_data_list[k][dcs_norm_max, 0],
-                    trans_data_list[k][dcs_norm_max, 1], label='DODC_N',
+                    trans_data_list[k][dcs_norm_max, 1], label='DCSO_N',
                     color='b', alpha=0.95, s=54, marker='x')
         plt.scatter(trans_data_list[k][dcs_out_max, 0],
-                    trans_data_list[k][dcs_out_max, 1], label='DODC_O',
+                    trans_data_list[k][dcs_out_max, 1], label='DCSO_O',
                     color='b', alpha=0.95, s=65, marker='+')
 
         plt.legend(ncol=3, prop={'size': 7.5}, loc='lower right',
                    bbox_transform=plt.gcf().transFigure)
         plt.xticks([])
         plt.yticks([])
-        plt.title('SG_M vs. DODC (' + X_test_name_list[k] + ')', fontsize=12)
+        plt.title('SG_M vs. DCSO (' + X_test_name_list[k] + ')', fontsize=12)
 
     plt.tight_layout()
 

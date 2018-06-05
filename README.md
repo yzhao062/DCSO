@@ -20,17 +20,17 @@ As classification ensembles, DCSO has two key stages. In the Generation stage, t
 ![Flowchart](https://github.com/yzhao062/DCSO/blob/master/md_figs/flowchart.png)
 
 ## Dependency
-The experiment codes are writted in Python 3.6 and built on a number of Python packages:
+The experiment codes are writen in Python 3.6 and built on a number of Python packages:
 - numpy>=1.13
 - scipy>=0.19
 - scikit_learn>=0.19
 
-Batch installation is possible using the supplied "requirements.txt" in conda or pypi.
+Batch installation is possible using the supplied "requirements.txt" with pip or conda.
 
 ------------
 
 ## Datasets
-Five datasets are used (see dataset folder):
+Ten datasets are used (see dataset folder):
 
 |  Datasets | #  Points (*n*)  | Dimension (*d*)  | # Outliers  | % Outliers
 | ------------ | ------------ | ------------ | ------------ |------------|

@@ -1,7 +1,7 @@
 # DCSO (Dynamic Combination of Detector Scores for Outlier Ensembles)
 ### Supplementary materials: datasets, demo source codes and sample outputs.
 
-Y. Zhao and M.K. Hryniewicki, "DCSO: Dynamic Combination of Detector Scores for Outlier Ensembles" *ACM KDD Workshop on Outlier Detection De-constructed (ODD)*, 2018. **Submitted, under review**.
+Y. Zhao and M.K. Hryniewicki, "DCSO: Dynamic Combination of Detector Scores for Outlier Ensembles" *ACM KDD Workshop on Outlier Detection De-constructed (ODD v5.0)*, 2018. **Accepted, to appear**.
 
 ------------
 

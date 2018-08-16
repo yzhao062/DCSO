@@ -3,8 +3,8 @@
 
 Y. Zhao and M.K. Hryniewicki, "DCSO: Dynamic Combination of Detector Scores for Outlier Ensembles" *ACM KDD Workshop on Outlier Detection De-constructed (ODD v5.0)*, 2018. 
 
-**![PDF](https://www.andrew.cmu.edu/user/lakoglu/odd/accepted_papers/ODD_v50_paper_3.pdf)** | 
-**![Presentation Slides](https://yuezhao.squarespace.com/s/ODD-Zhao-DCSO.pdf)** 
+**[PDF](https://www.andrew.cmu.edu/user/lakoglu/odd/accepted_papers/ODD_v50_paper_3.pdf)** | 
+**[Presentation Slides](https://yuezhao.squarespace.com/s/ODD-Zhao-DCSO.pdf)** 
 
 ------------
 

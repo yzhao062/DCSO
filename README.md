@@ -3,8 +3,22 @@
 
 Y. Zhao and M.K. Hryniewicki, "DCSO: Dynamic Combination of Detector Scores for Outlier Ensembles" *ACM KDD Workshop on Outlier Detection De-constructed (ODD v5.0)*, 2018. 
 
+Please cite the paper as:
+
+    @conference{zhao2018dcso,
+        author     = {Zhao, Yue and Hryniewicki, Maciej K},
+        title      = {{DCSO:} Dynamic Combination of Detector Scores for Outlier Ensembles},
+        booktitle  = {ACM SIGKDD ODD Workshop},
+        year       = {2018},
+        address    = {London, UK},
+        timestamp  = {Mon, 22 Oct 2018 13:07:32 +0200},
+    }
+
+    
 **[PDF](https://www.andrew.cmu.edu/user/lakoglu/odd/accepted_papers/ODD_v50_paper_3.pdf)** | 
-**[Presentation Slides](https://yuezhao.squarespace.com/s/ODD-Zhao-DCSO.pdf)** 
+**[Presentation Slides](https://yuezhao.squarespace.com/s/ODD-Zhao-DCSO.pdf)** ]
+
+**Note**: [LSCP](https://github.com/yzhao062/lscp) is an upgraded version of DCSO, which has been accepted at SDM' 19.
 
 ------------
 

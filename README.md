@@ -35,18 +35,18 @@ Batch installation is possible using the supplied "requirements.txt" with pip or
 ## Datasets
 Ten datasets are used (see dataset folder):
 
-|  Datasets | #  Points (*n*)  | Dimension (*d*)  | # Outliers  | % Outliers
-| ------------ | ------------ | ------------ | ------------ |------------|
-|Pima 	|768	|8	|268	|34.8958|
-|Vowels|	1456	|12|	50|	3.4341|
-|Letter	|1600|	32|	100	|6.2500|
-|Cardio|	1831	|21	|176|	9.6122|
-|Thyroid	|3772	|6	|93	|2.4655|
-|Satellite	|6435	|36	|2036	|31.6394|
-|Pendigits	|6870	|16	|156	|2.2707|
-|Annthyroid	|7200	|6	|534	|7.4167|
-|Mnist	|7603	|100	|700	|9.2069|
-|Shuttle	|49097	|9	|3511|	7.1511|
+| Datasets   | #  Points (*n*)  | Dimension (*d*)  | # Outliers  | % Outliers
+| ---------- | ---------------- | ---------------- | ----------- |------------|
+| Pima 	     | 768	            | 8	               | 268	     | 34.8958    |
+| Vowels     | 1456	            | 12               | 50          | 3.4341     |
+| Letter	 | 1600             | 32               | 100	     | 6.2500     |
+| Cardio     | 1831	            | 21	           | 176         | 9.6122     |
+| Thyroid	 | 3772	            | 6	               | 93	         | 2.4655     |
+| Satellite	 | 6435	            | 36	           | 2036	     | 31.6394    |
+| Pendigits	 | 6870	            | 16	           | 156	     | 2.2707     |
+| Annthyroid | 7200	            | 6	               | 534	     | 7.4167     |
+| Mnist	     | 7603	            | 100	           | 700	     | 9.2069     |
+| Shuttle	 | 49097	        | 9	               | 3511        | 7.1511     |
 
 All datasets are accesible from http://odds.cs.stonybrook.edu/. Citation Suggestion for the datasets please refer to: 
 > Shebuti Rayana (2016).  ODDS Library [http://odds.cs.stonybrook.edu]. Stony Brook, NY: Stony Brook University, Department of Computer Science.
